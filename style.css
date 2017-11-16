@@ -1,0 +1,230 @@
+/*********************************************************************************/
+/* General setting                                                                  */
+/*********************************************************************************/
+
+*{
+  margin:0;
+  padding:0;
+
+  font-family: sans-serif;
+}
+
+
+h2{
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+h3{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+body{
+  background-color: #eaeaea;
+}
+
+/*********************************************************************************/
+/* HEADER                                                                        */
+/*********************************************************************************/
+header{
+  background-color: #363636;
+  color: #FFFFFF;
+}
+
+h1{
+  font-size: 300%;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+h4{
+  font-size: 125%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+header p{
+  font-size: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/*********************************************************************************/
+/* RETOUR HAUT                                                                   */
+/*********************************************************************************/
+.retour{
+  text-transform: uppercase;
+  background-color: #363636;
+  padding:2px;
+  width: 70px;
+
+  position:fixed;
+  bottom:20px;
+  right:20px;
+}
+
+.retour a{
+	margin:5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+  color: #FFFFFF;
+}
+/*********************************************************************************/
+/* NAVBAR                                                                        */
+/*********************************************************************************/
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+nav ul li{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:5%;
+}
+
+.decoration{
+  opacity: 0.5;
+}
+
+.navcontinent{
+  width: 20%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+nav ul li a:hover{
+  text-shadow: 2px 1px 5px black;
+}
+
+/*COLORATION*/
+#navafriques{
+    border-top: solid #8dc63f 3px;
+}
+
+#navameriques{
+    border-top: solid #af1641 3px;
+}
+
+#navasie{
+    border-top: solid #3E5A99 3px;
+}
+
+#navpaci{
+    border-top: solid #ff6816 3px;
+}
+
+/*********************************************************************************/
+/* MOSAIC Style                                                                  */
+/*********************************************************************************/
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: flex-start;*/
+  align-content: stretch;
+
+  flex-wrap: wrap;
+
+  padding: 20px;
+  width: 90%;
+}
+
+article div a{
+  width:220px;
+  text-decoration: none;
+  margin: 10px 10px 10px 15px;
+}
+
+figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 2px 2px 5px black;
+  background-color: white;
+}
+
+figure:hover{
+  box-shadow: 1px 1px 5px black;
+}
+
+figure img{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 200px; 
+}
+
+figure figcaption{
+  text-align: center;
+  font-size: 0.7em;
+  padding: 5px 5px 5px 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px, 5px;
+}
+
+/*COLORATION*/
+#afriques div figure figcaption, #afriques h2{
+    background-color: #8dc63f;
+}
+
+#afriques h3{
+  background-color: #a3d165;
+}
+
+#ameriques div figure figcaption, #ameriques h2{
+  background: #af1641;
+}
+
+#ameriques h3{
+  background-color: #bf4466;
+}
+
+#asie div figure figcaption, #asie h2{
+    background: #3E5A99;
+}
+
+#asie h3{
+  background-color: #647aad;
+}
+
+#paci div figure figcaption, #paci h2{
+    background: #ff6816;
+}
